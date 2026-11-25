@@ -1,0 +1,5 @@
+"""Python Programming Assignment 2 - Question 40."""
+
+start, end = 10, 50
+for n in range(start, end+1):
+    if n > 1 and all(n % i for i in range(2, int(n**0.5)+1)): print(n)
